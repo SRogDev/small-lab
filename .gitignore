@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environment and secrets — never commit these
+.env
+.env.*
+!.env.example
+
+# Experiment artifacts (large, regenerable, or machine-specific)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+/checkpoints/
+/runs/
+/wandb/
+/mlruns/
+
+# Datasets — fetched by scripts, not committed (see docs/reproducibility.md)
+/data/
+*.parquet
+*.arrow
+*.bin
+*.idx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

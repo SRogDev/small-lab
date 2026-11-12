@@ -1,0 +1,54 @@
+# ILLUSTRATIVE TEMPLATE ONLY — not a real experiment.
+# Copy this file into a new experiment directory under experiments/
+# and fill in every field before running anything. Nothing in this file
+# has been run, approved, or measured.
+
+experiment_id: "000-template"
+title: "Illustrative experiment title"
+research_question: "What specific question does this experiment answer?"
+hypotheses:
+  - statement: "A falsifiable claim about what will happen."
+    falsified_if: "The observation that would prove this claim wrong."
+status: "proposed" # proposed | running | completed | stopped
+
+model:
+  # Architecture described in plain terms; implementation lives in
+  # src/small_lab/models/ or in the experiment directory.
+  architecture: "e.g. tiny-transformer-2-layer"
+  parameters: null # fill in only after the model is built and counted
+  initialization: "e.g. default PyTorch init (state exactly what was used)"
+
+dataset:
+  name: "e.g. tiny-shakespeare"
+  source: "URL or local path — record where the data came from"
+  version: "commit, snapshot date, or release tag"
+  license: "dataset license, or 'unknown — verify before use'"
+  splits:
+    train: "how the train split was defined"
+    validation: "how the validation split was defined"
+    test: "how the test split was defined (never tune on this)"
+
+training:
+  seed: 0
+  epochs: null
+  batch_size: null
+  learning_rate: null
+  optimizer: "e.g. adamw (state the exact settings used)"
+  loss: "e.g. cross-entropy"
+  device: "cpu | cuda (record the actual hardware used)"
+
+evaluation:
+  metrics:
+    - "e.g. validation loss"
+    - "e.g. accuracy on the held-out test set"
+  procedure: "Exactly how evaluation was run, on which split, with which code."
+
+reproducibility:
+  git_commit: "full commit hash of the code that ran"
+  python_version: "e.g. 3.12.3"
+  torch_version: "e.g. 2.15.0+cpu"
+  hardware: "e.g. laptop CPU, 8 cores — record the real machine"
+  environment: "uv.lock hash or environment description"
+  duration: "wall-clock time of the run"
+  artifacts: "where checkpoints, logs, and figures are stored"
+  limitations: "What this experiment cannot show."
