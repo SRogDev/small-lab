@@ -16,6 +16,5 @@ the repository README and in `docs/plans/repository-creation-plan.md`.
 
 Pending decisions (owner approval required):
 
-- **License** — no license has been selected. The repository is public
-  with no `LICENSE` file; all rights reserved by default until the
-  owner chooses one.
+- **License** — decided: **MIT**, 2026-11-11. `LICENSE` file added;
+  recorded in `pyproject.toml` and the README.

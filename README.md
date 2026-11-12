@@ -187,7 +187,4 @@ owner.
 
 ## License
 
-No license has been selected yet. The repository is public with no
-`LICENSE` file, which means all rights are reserved by default until
-the owner chooses a license. That decision is recorded as pending in
-`docs/decisions/README.md`.
+MIT — see [`LICENSE`](LICENSE). Decided by the owner on 2026-11-11.
